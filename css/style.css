@@ -1,0 +1,256 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align:right;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+.navigation {
+    width: 90%;
+    padding: 1%;
+    text-align: right;
+}
+
+li {
+    display:inline;
+    font-family: Gelasio;
+    font-size: 40px;
+    word-spacing: 100px;
+}
+
+body {
+    background-color: #F4E9E3;
+}
+
+p {
+    font-family: Gelasio;
+    font-size: 24px;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer-image {
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 54%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+}
+
+footer ul li {
+    position: relative;
+    top: -50px;
+    left: -550px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #F4E9E3;
+    margin: 0;
+    padding: 0;
+}
+
+.heroImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.container img {
+    width: 75%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.text {
+    margin-left: 100px;
+    max-width: 600px;
+}
+
+.text p {
+    margin-bottom: 30px;
+}
+
+.text button {
+    position: relative;
+    display: block; 
+    margin-top: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flexContainer .skill{
+    width: 33%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flexContainer .skill img {
+    max-width: 100%;
+    height: auto;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    grid-gap: 20px; 
+    grid-template-areas:
+        "project1-img project1-desc"
+        "project2-img project2-desc"
+        "project3-img project3-desc";
+}
+
+.project1-img {
+    grid-area: project1-img;
+}
+
+.project1-desc {
+    grid-area: project1-desc;
+}
+
+.project2-img {
+    grid-area: project2-img;
+}
+
+.project2-desc {
+    grid-area: project2-desc;
+}
+
+.project3-img {
+    grid-area: project3-img;
+}
+
+.project3-desc {
+    grid-area: project3-desc;
+}
+
+.workItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workDescription {
+    flex: 1;
+    text-align: left;
+    margin-right: 0px;  
+    margin-left: -100px; 
+}  
+
+
+.workItem img {
+    margin-left: 30%;
+}
+
+.mySkills h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.myWork h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.mySkills h4 {
+    font-size:200%;
+}
+
+.myWork h4 {
+    font-size:200%;
+}
+
+.workGrid button {
+    background-color: #43647C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.container button {
+    background-color: #43647C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.workGrid p {
+    font-size: 18px;
+    margin-right: 10%;
+    
+}
+
+.workDescription {
+    margin-right: 10%;
+}
+
+.viewAllProjects {
+    display: block;
+    margin: 100px auto 40px auto; 
+    padding: 20px 30px;
+    background-color: #6f7139; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer .skill {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
+    }
+}
